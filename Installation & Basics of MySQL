@@ -1,0 +1,117 @@
+Q What is Database?
+
+Place Where Data is Stored is called Database.
+A database is an organized collection of data, so that it can be easily accessed and managed.
+
+Q. Why Database is required?
+Databases support good data access because: Large volumes of data can be stored in one place. Multiple users can read and modify the data at the same time. Databases are searchable and sortable, so the data you need can be found quick and easily.
+
+DBMS is the software system that allows users to define, create, maintain and control access to the database. DBMS makes it possible for end users to create, read, update and delete data in database. It is a layer between programs and data.
+Advantages of DBMS
+1.Reducing Data Redundancy : Deals with Duplicate Data
+2.Sharing of Data : Many remote users can also access the database simultaneously and share the data between themselves.
+3.Privacy : Only the authorized users can access a database according to its privacy constraints.
+4.Backup and Recovery : DBMS automatically takes care of backup and recovery
+5.Data Consistency : Data consistency is ensured in a database because there is no data redundancy. All data appears consistently across the database and the data is same for all the users viewing the database.
+
+In Database we can store any type of data string, Number, Char, Images, Audio etc.
+
+Types of DBMS
+1.Hierarchical database.
+2.Network database.
+3.Relational database.
+4.Object-Oriented database.
+
+
+Out of this RDBMS (Relational  Database Management System) is most commonly used.
+Advantages of RDBMS 
+1.Data is Stored as Tables.
+2.Multiple data elements can be accessed at same time.
+3.Data is present in multiple tables which can be related to each other.
+4.Normalization can be achieved.
+5.supports distributed databases.
+6.Deals with large quantity of data.
+7.Data Redundancy can be reduced using key and indexes in RDBMS.
+8.Supports multiple users at a time.
+9.RDBMS has multilayer security during data manipulation. Security Providers are Oracle, SQL Server.
+
+In RDBMS MySQL is most commonly used Everywhere.
+MySQL is powered by Oracle Corporation & it is Popular because it is open source, Cost is Low, Flexible & Scalable, Secure Also tools like workbench is available.
+Name MySQL derived from co-founder Michael Widenius's daughter i.e. My and "SQL", the abbreviation for Structured Query Language.
+For Installation of MySQL Steps are as follow:
+Visit https://dev.mysql.com/downloads/shell/
+Select Your Operating System and 32/64 bit.
+ Click on Download.
+2.In Next Page If you want to join the community then select the option otherwise click on No thanks, Just start my download which is available bottom of web page.
+After Downloading Install It as per your Operating System Method and your requirement.
+While Installing It will show you username & Ask you the password.
+Default username is root and remember your password for future use.
+
+Advantages of RDBMS 
+1.Data is Stored as Tables.
+2.Multiple data elements can be accessed at same time.
+3.Data is present in multiple tables which can be related to each other.
+4.Normalization can be achieved.
+5.supports distributed databases.
+6.Deals with large quantity of data.
+7.Data Redundancy can be reduced using key and indexes in RDBMS.
+8.Supports multiple users at a time.
+9.RDBMS has multilayer security during data manipulation. Security Providers are Oracle, SQL Server.
+
+
+Basic of MySQL
+MySQL comes under RDBMS. 
+
+
+
+Basic Commands of MySQL
+# to see all the databases 
+	SHOW DATABASE
+#to create Database
+	CREATE DATABASE DATABASE_NAME
+#Use Database
+	USE DATABASE
+#To view all the table
+	SELECT * FROM table name
+#To Create Table 
+	CREATE TABLE table_name
+	( Column_name_1 datatype optional parameter,
+	  Column_name_2 datatype
+	  Column_name_3 datatype
+	  ………………………………
+	 Column_name_n datatype
+	)
+To DROP Table
+	DROP TABLE table_name;
+
+
+
+#INSERT statement, which is used to insert new rows into a table.
+	INSERT INTO table_name (column1, column2, ... )
+	VALUES (value1, value2, ... );
+#UPDATE statement which is used to update the data in existing rows in the table. 
+	UPDATE table_name
+	SET column1 = value1, column2 = value2, ...
+	WHERE condition;
+#DELETE statement which is used to remove rows from a table.
+	DELETE FROM table_name
+	WHERE condition;
+	)
+#ALTER statement to add, delete, or modify columns existing tables
+ #ADD Column
+ALTER TABLE table_name
+	ADD COLUMN column_name data_type column_constraint;
+#DROP Column
+ALTER TABLE table_name
+	DROP COLUMN column_name;
+
+ALTER TABLE table_name
+#Alter 
+	ALTER COLUMN column_name SET DATA TYPE data_type;
+#Rename
+ALTER TABLE table_name
+   RENAME COLUMN current_column_name TOnew_column_name;
+#Truncate Table
+TRUNCATE TABLE
+	TRUNCATE TABLE table_name;
+
